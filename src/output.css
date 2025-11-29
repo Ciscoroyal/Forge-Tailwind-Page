@@ -1108,6 +1108,11 @@
       margin-bottom: calc(var(--spacing) * 0);
     }
   }
+  .sm\:hidden {
+    @media (width >= 40rem) {
+      display: none;
+    }
+  }
   .sm\:h-\[80vh\] {
     @media (width >= 40rem) {
       height: 80vh;
