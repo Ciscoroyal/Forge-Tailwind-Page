@@ -1113,9 +1113,29 @@
       display: none;
     }
   }
+  .sm\:h-\[0vh\] {
+    @media (width >= 40rem) {
+      height: 0vh;
+    }
+  }
+  .sm\:h-\[60vh\] {
+    @media (width >= 40rem) {
+      height: 60vh;
+    }
+  }
+  .sm\:h-\[70vh\] {
+    @media (width >= 40rem) {
+      height: 70vh;
+    }
+  }
   .sm\:h-\[80vh\] {
     @media (width >= 40rem) {
       height: 80vh;
+    }
+  }
+  .sm\:h-auto {
+    @media (width >= 40rem) {
+      height: auto;
     }
   }
   .sm\:h-full {
