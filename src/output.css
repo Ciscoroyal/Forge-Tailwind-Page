@@ -1113,6 +1113,11 @@
       display: none;
     }
   }
+  .sm\:h-3\/4 {
+    @media (width >= 40rem) {
+      height: calc(3/4 * 100%);
+    }
+  }
   .sm\:h-\[0vh\] {
     @media (width >= 40rem) {
       height: 0vh;
