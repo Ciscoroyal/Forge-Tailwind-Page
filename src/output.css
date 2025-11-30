@@ -14,7 +14,6 @@
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-pink-300: oklch(82.3% 0.12 346.018);
-    --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-500: oklch(55.1% 0.027 264.364);
@@ -215,9 +214,6 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .mt-3 {
-    margin-top: calc(var(--spacing) * 3);
-  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
@@ -260,26 +256,14 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
   .h-1\/3 {
     height: calc(1/3 * 100%);
-  }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
   }
   .h-2\/3 {
     height: calc(2/3 * 100%);
   }
   .h-2\/5 {
     height: calc(2/5 * 100%);
-  }
-  .h-3 {
-    height: calc(var(--spacing) * 3);
   }
   .h-3\/5 {
     height: calc(3/5 * 100%);
@@ -305,12 +289,6 @@
   .h-screen {
     height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
-  .w-1\/2 {
-    width: calc(1/2 * 100%);
-  }
   .w-\[35vw\] {
     width: 35vw;
   }
@@ -332,17 +310,8 @@
   .flex-none {
     flex: none;
   }
-  .flex-grow {
-    flex-grow: 1;
-  }
   .grow {
     flex-grow: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .list-inside {
     list-style-position: inside;
@@ -367,9 +336,6 @@
   }
   .justify-center {
     justify-content: center;
-  }
-  .gap-0 {
-    gap: calc(var(--spacing) * 0);
   }
   .gap-0\.5 {
     gap: calc(var(--spacing) * 0.5);
@@ -429,10 +395,6 @@
   .rounded-md {
     border-radius: var(--radius-md);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -452,9 +414,6 @@
   }
   .bg-blue-400 {
     background-color: var(--color-blue-400);
-  }
-  .bg-gray-100 {
-    background-color: var(--color-gray-100);
   }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
@@ -477,20 +436,11 @@
   .object-contain {
     object-fit: contain;
   }
-  .p-1 {
-    padding: calc(var(--spacing) * 1);
-  }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
-  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
-  }
-  .px-1 {
-    padding-inline: calc(var(--spacing) * 1);
   }
   .px-1\.5 {
     padding-inline: calc(var(--spacing) * 1.5);
@@ -506,9 +456,6 @@
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
-  }
-  .py-0 {
-    padding-block: calc(var(--spacing) * 0);
   }
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
@@ -591,10 +538,6 @@
   .underline {
     text-decoration-line: underline;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .sm\:mt-auto {
     @media (width >= 40rem) {
       margin-top: auto;
@@ -660,14 +603,14 @@
       padding: calc(var(--spacing) * 12);
     }
   }
-  .sm\:px-8 {
-    @media (width >= 40rem) {
-      padding-inline: calc(var(--spacing) * 8);
-    }
-  }
   .sm\:px-10 {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:px-20 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 20);
     }
   }
   .sm\:px-24 {
@@ -773,7 +716,7 @@
     background-image: url("image-from-rawpixel-id-12504330-png.png");
     background-repeat: repeat;
     background-blend-mode: overlay;
-    opacity: 0.03;
+    opacity: 0.45;
     position: fixed;
     top: 0;
     left: 0;
@@ -781,6 +724,10 @@
     height: 100%;
     pointer-events: none;
   }
+}
+.bg-gradient-mesh2 {
+  background-color: black;
+  background-image: radial-gradient( circle at 90% 10%, rgba(0, 255, 255, 0.2), transparent 40% ), radial-gradient(circle at 90% 60%, rgba(255, 0, 255, 0.15), transparent 20%), radial-gradient(circle at 90% 60%, rgba(255, 0, 255, 0.15), transparent 20%), radial-gradient( circle at 50% 50%, rgba(173, 216, 230, 0.3), transparent 20% );
 }
 @property --tw-space-y-reverse {
   syntax: "*";
@@ -801,11 +748,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-divide-x-reverse {
   syntax: "*";
   inherits: false;
@@ -818,7 +760,6 @@
       --tw-divide-y-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-divide-x-reverse: 0;
     }
   }
