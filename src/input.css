@@ -1,25 +1,22 @@
 @import "tailwindcss";
 @layer utilities {
   .bg-gradient-mesh {
-    background-color: #f0f8ff; /* Light base color */
-    background-image: 
-    /* Soft Blue/Teal Glow (Top Right) */ radial-gradient(
-        circle at 75% 10%,
+    background-color: #f0f8ff;
+    background-image: radial-gradient(
+        circle at 90% 10%,
         rgba(0, 255, 255, 0.2),
         transparent 40%
       ),
-      /* Soft Pink/Purple Glow (Left Center) */
-        radial-gradient(
-          circle at 25% 60%,
-          rgba(255, 0, 255, 0.15),
-          transparent 50%
-        ),
-      /* Soft White/Light Blue Glow (Center) */
-        radial-gradient(
-          circle at 50% 50%,
-          rgba(173, 216, 230, 0.3),
-          transparent 60%
-        );
+      radial-gradient(
+        circle at 90% 60%,
+        rgba(255, 0, 255, 0.15),
+        transparent 20%
+      ),
+      radial-gradient(
+        circle at 50% 50%,
+        rgba(173, 216, 230, 0.3),
+        transparent 20%
+      );
   }
 
   .bg-noise {
